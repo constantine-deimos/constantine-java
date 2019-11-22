@@ -1,35 +1,52 @@
 import java.util.Scanner;
 public class pods {
     //lauren questions:
-    //https://edabit.com/challenge/umRwYETG7ogToZhSi
-    //1.Create a method that takes an integer as an argument and returns"even" for even integers and "odd" for odd integers.
 
-
-
-    //2.
     public static void main (String[] args) {
-        Scanner stdin = new Scanner(System.in);
+        //in means input
+        Scanner scanner = new Scanner(System.in);
+
+        //=========what is your favorite food?======
         String x;
         System.out.print("Please enter your favorite food: ");
-        x = stdin.nextLine();
+        x = scanner.nextLine();
+        //may need to change \n
         System.out.printf("Wow %s, is my favorite too! \n", x);
 
+        //============for farmer question================
+        scanner.nextLine();
 
-        //here is where we call the matches method to see result
-        System.out.println(matches("Hello", "HELlo"));
-        System.out.println(matches("Goodbye", "bye"));
-    }//ends the main method
+        System.out.println("Hello farmer ");
+        System.out.println("How many chickens do you have? ");
+        int chicken = scanner.nextInt();
+
+        System.out.println("How many cows do you have?  ");
+        int cows = scanner.nextInt();
+
+        System.out.println("How many pigs do you have?  ");
+        int pigs = scanner.nextInt();
+
+        chicken = chicken * 2;
+        cows = cows * 4;
+        pigs = pigs * 4;
+
+        int totalLegs = (chicken + cows + pigs);
+        System.out.println("The total amount of farm animal legs is: \n" + totalLegs);
+
+        //=========for area of a triangle===============
+        scanner.nextLine();
+        System.out.println("Enter the base of the triangle:  ");
+        int base = scanner.nextInt();
+
+        System.out.println("Enter the height of the triangle:  ");
+        int height = scanner.nextInt();
+
+        int area = (base * height)/2;
+        System.out.printf("The area of the triangle is: %s\n" , area);
 
 
 
-//https://edabit.com/challenge/D6Lcut2s2gEzdCPvv
-//3.Write a function that validates whether two strings are identical. Make it case insensitive.
-//ex. match("hello", "hELLo") ➞ true / match("mask", "mAskinG") ➞ false
-
-//have to define that the inputs are strings
-    public static boolean matches (String str1, String str2){
-        //equalsIgnoreCase compares the strings so that it is case insensitive
-        return str1.equalsIgnoreCase(str2);
 
     }
+
 }
