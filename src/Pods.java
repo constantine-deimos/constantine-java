@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class pods {
+public class Pods {
     //lauren questions:
 
     public static void main (String[] args) {
