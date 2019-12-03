@@ -25,7 +25,6 @@ public class laurenLab {
         System.out.println(Arrays.toString(input));
 
     }
-    // of coin tosses (true=heads, false=tails),
-    //to see if you can get
+
 
 }
