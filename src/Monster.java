@@ -5,13 +5,8 @@ public class Monster {
     public Monster (String monster){
         this.MonsterName = monster;
     }
-    // returns the person's name
+    // returns the monsters name
     public String getMonsterName(){
         return this.MonsterName;
-    }
-
-    // changes the name property to the passed value
-    public void setMonsterName(String name){
-        this.MonsterName = name;
     }
 }
