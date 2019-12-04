@@ -1,6 +1,4 @@
 import java.text.NumberFormat;
-import java.util.Scanner;
-
 
 public class ShoppingCartItems {
     //set the total cost of shopping cart
@@ -25,10 +23,10 @@ public class ShoppingCartItems {
     }
 
     //return a string with the info of item
-    @Override
     public String toString (){
-        NumberFormat fmformat = NumberFormat.getCurrencyInstance();
-        String stringtb = item.length() > 10 ? "\t" : "\t\t";
-        return item + stringtb + fmformat.format (price) + "\t\t" + quantity + "\t\t" + fmformat.format (price * quantity);
+        NumberFormat fmt = NumberFormat.getCurrencyInstance();
+
+        return (item + "\t" + fmt.format(price) + "\t" + quantity + "\t"
+                + fmt.format(price * quantity));
     }
 }
