@@ -1,7 +1,7 @@
-public class MonsterIdenity extends Monster{
+public class MonsterIdentity extends Monster{
     private  String monster;
 
-    public MonsterIdenity (String name, String monsterType){
+    public MonsterIdentity(String name, String monsterType){
         super(name);
         this.monster = monsterType;
     }
@@ -11,7 +11,7 @@ public class MonsterIdenity extends Monster{
         //it will return the monsterType (ghost,werewolf)
         return monster;
     }
-    public String getMonsterIdenity() {
+    public String getMonsterIdentity() {
         //this will return who the monster actually is
         return super.getMonsterName();
     }
