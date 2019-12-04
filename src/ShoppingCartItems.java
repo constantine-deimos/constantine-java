@@ -26,7 +26,7 @@ public class ShoppingCartItems {
     public String toString (){
         NumberFormat fmt = NumberFormat.getCurrencyInstance();
 
-        return (item + "\t" + fmt.format(price) + "\t" + quantity + "\t"
-                + fmt.format(price * quantity));
+            //.format returns a formatted string
+        return (item + "\t" + fmt.format(price) + "\t" + quantity + "\t" + fmt.format(price * quantity));
     }
 }

@@ -15,7 +15,7 @@ public class ScobbyDooFindsMonster {
             scanner.nextLine();
 
             System.out.println("Mystery Inc encounters the monster!");
-            System.out.println("Montage of running away from the monster...");
+            System.out.println("Montage of the gang running away from the monster...");
             scanner.nextLine();
 
 
@@ -28,7 +28,7 @@ public class ScobbyDooFindsMonster {
             System.out.println("Fred sets a trap! So the gang sets out to catch " + Creeper.getMonsterName() + "!");
             scanner.nextLine();
 
-            System.out.println("Trap is triggered....");
+            System.out.println("The trap was triggered....");
             System.out.println("Jinkies we caught " + Creeper.getMonsterName() + "!");
             scanner.nextLine();
 
