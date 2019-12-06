@@ -5,6 +5,7 @@ public class MonsterIdentity extends Monster{
         super(name);
         this.monster = monsterType;
     }
+    //
     @Override
     //override the getMonsterName from Monster class
     public String getMonsterName() {
